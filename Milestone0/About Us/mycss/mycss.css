@@ -1,0 +1,17 @@
+.profile-photo{
+    background-color: rgb(122, 178, 241);
+    margin-top:5rem;
+    width: 100%;
+}
+
+.profile-description{
+    background-color: rgb(245, 244, 204);
+    width:100%;
+    margin-top:0.5rem;
+    padding-left:20%;
+    padding-right:20%;
+}
+
+p{
+    text-align: center;
+}
