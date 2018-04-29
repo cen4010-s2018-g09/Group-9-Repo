@@ -1,0 +1,81 @@
+.home{
+    <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('http://i66.tinypic.com/2eklsnn.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="parallax"></div>
+
+</div>
+
+<div class="parallax"></div>
+
+</body>
+</html>
+     
+}
+.logoNav{
+    background-color: white;
+}
+body {
+    margin-top: 135px;
+}
+
+.fixed-top-2 {
+    margin-top: 110px;
+}
+
+.sideBar{
+    background-color: white;
+}
+
+.sideBar:hover{
+    background-color: rgb(28, 97, 247);
+    color:white;
+}
+
+td{
+    padding-right:1rem;
+}
+
+.thumbnail{
+    background-color: #fff;
+    -webkit-transition: all 0.5s; 
+    transition: all 0.5s ease;
+    
+}
+
+div.thumbnail {
+    border: 1px solid #262b2e3a;
+border-radius: 0px !important;
+-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.16);
+padding: 10px;
+margin-bottom:2rem;
+}
+
+.itemName{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
