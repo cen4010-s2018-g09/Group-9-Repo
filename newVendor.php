@@ -39,7 +39,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Add New Vendor</title>
+    <title>Add New Item</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -71,9 +71,7 @@ session_start();
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-      <li class="nav-item" id = "kit-cart">
-                
-                </li>
+       
         <li class="nav-item">
                 <span id="cart-bubble" class="notify-bubble">0</span>
                 <a href="shoppingcart.php"><img  src="images/SC2.png" width="30px" height="30px" alt=""></a>
@@ -101,7 +99,10 @@ session_start();
 
             
           </ul>
-
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
       </nav>
     <!-- Page Content -->
@@ -212,19 +213,19 @@ try{
 
 
   $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO Vendors VALUES ('$vendor_name','$vendor_website ','$vendor_address','$vendor_phone_number','$vendor_poc','$vendor_contact_email','$vendor_items')";
+  $sql = "insert into Vendors values ('$vendor_name','$vendor_website ','$vendor_address','$vendor_phone_number','$vendor_poc','$vendor_contact_email','$vendor_items')";
     $conn->exec($sql);
 //   echo '<script>window.location = "vendorDetails.php";</script>';
   
 //$yourURL="http://lamp.cse.fau.edu/~CEN4010_S2018g09/dev/Alicia/vendorDetails.php";
 //echo ("<script>location.href='$yourURL'</script>");
 
-
-echo "alert('Your message has been sent successfully');";
-
+echo "<script language='javascript' type='text/javascript'>";
+echo "alert('Your message has been send successfully');";
+echo "</script>";
 
 $URL="vendorDetails.php";
-echo "location.href='$URL';";
+echo "<script>location.href='$URL'</script>";
 
 
 }
